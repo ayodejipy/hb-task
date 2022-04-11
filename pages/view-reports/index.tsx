@@ -11,7 +11,7 @@ const Index = () => {
 			<div className="p-10">
 				<h4 className="font-semibold text-2xl">View Reports</h4>
 
-				<div className="border rounded border-gray-200 mt-14">
+				<div className="w-full border rounded border-gray-200 mt-14">
 					<ReportItem active isNew />
 					<ReportItem />
 					<ReportItem />

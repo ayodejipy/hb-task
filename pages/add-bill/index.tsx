@@ -45,7 +45,7 @@ const Index = () => {
 							<div className="w-full">
 								<label className="block mb-2 text-xs font-medium text-gray-700">Upload Copy of Bill</label>
 								
-								<div className="block w-48 py-3 px-4 pr-8 relative bg-white appearance-none border border-gray-300 rounded-md hover:shadow-outline-gray">
+								<div className="block py-3 px-4 pr-8 relative bg-white appearance-none border border-gray-200 rounded hover:shadow-outline-gray">
 									<input type="file" name="files" className="absolute inset-0  outline-none w-full h-full opacity-0 bg-gray-200 text-gray-500 text-sm  shadow-sm focus:outline-none focus:border-green-500 focus:ring-2 focus:ring-green-500 focus:ring-opacity-40" />
 									<div className="flex items-center">
 										<p className="text-gray-400">Upload file</p>
@@ -81,7 +81,7 @@ const Index = () => {
 								id=""
 								rows={3}
 								placeholder=""
-								className="border border-gray-200 rounded min-h-[130px] focus:outline-none w-full text-lg placeholder:text-gray-500 tracking-wide"
+								className="border border-gray-200 rounded min-h-[130px] focus:outline-none w-full text-lg text-gray-500 placeholder:text-gray-500 tracking-wide"
 							></textarea>
 						</div>
 					</div>
@@ -91,7 +91,7 @@ const Index = () => {
 				<div className="border rounded border-gray-200 mt-14 p-2">
 					<div>
 						{/* Table needs to scroll for best data display */}
-						<table className="table-auto overflow-x-auto w-full">
+						<table className="table-auto w-full">
 							<thead className="border-b border-gray-200">
 								<tr>
 									<th className="p-2 text-sm text-left font-semibold text-slate-500 w-3/12">Item</th>

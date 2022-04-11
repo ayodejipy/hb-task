@@ -28,9 +28,9 @@ const Sidenav = () => {
 	}
 	
 	return (
-		<aside className="flex items-start w-96 h-full py-8 px-8 sticky bottom-4 top-[104px]">
-			<div className="w-full flex flex-wrap flex-col space-y-16">
-				<div className="w-full flex flex-col flex-wrap space-y-8">
+		<aside className="flex items-start w-88 h-full py-8 px-8 sticky inset-0 top-[104px]">
+			<div className="w-52 flex flex-col space-y-16">
+				<div className="w-full flex flex-col space-y-8">
 					<SidenavLink text="Welcome" Icon={Shuttle} />
 					<SidenavLink text="Dashboard" Icon={Dashboard} />
 					<SidenavLink text="Sales" Icon={Wallet} hasChild />

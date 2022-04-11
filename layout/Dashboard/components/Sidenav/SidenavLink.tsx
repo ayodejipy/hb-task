@@ -41,8 +41,7 @@ const SidenavLink = ({ text, active, Icon, hasChild, subLinks, }: Props) => {
 	return (
 		<>
 			<div 
-				className={`relative w-full flex flex-wrap items-center space-x-10 text-xl cursor-pointer
-					${ isFocus ? 'font-semibold before:block before:bg-blue-aud before:w-14 before:h-14 before:shadow-md before:rounded-full before:absolute before:-inset-x-4 before: ' : '' }
+				className={`relative w-full flex flex-wrap items-center space-x-10 text-xl cursor-pointer ${ isFocus ? 'font-semibold before:block before:bg-blue-aud before:w-14 before:h-14 before:shadow-md before:rounded-full before:absolute before:-inset-x-4 before: ' : '' }
 					${ hasChild ? '' : '' }
 				`}
 				onClick={() => setIsFocus(!isFocus)}

@@ -13,7 +13,7 @@ const BaseFieldInput = ({ id, type, placeholder, label }: IProps) => {
 				</label>
 			)}
 
-			<input className="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-base placeholder:font-normal placeholder:text-grey-soft"
+			<input className="appearance-none border rounded w-full py-3 px-4 text-gray-400 leading-tight focus:outline-none focus:shadow-outline placeholder:text-base placeholder:font-normal placeholder:text-grey-soft"
 				id={id}
 				type={type}
 				placeholder={placeholder}

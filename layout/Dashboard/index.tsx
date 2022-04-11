@@ -23,7 +23,7 @@ const DashboardLayout = ({ children }: { children: ReactNode}) => {
 				{/* sidebar */}
 				<Sidenav />
 
-				<section className="main-content flex-grow max-w-full bg-white rounded-tl-lg ml-20">
+				<section className="main-content flex-grow max-w-full bg-white rounded-tl-lg ml-10">
 					{ children }
 				</section>
 			</main>
