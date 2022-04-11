@@ -41,19 +41,22 @@ const SidenavLink = ({ text, active, Icon, hasChild, subLinks, }: Props) => {
 	return (
 		<>
 			<div 
-				className={`relative w-full flex flex-wrap items-center space-x-10 text-xl cursor-pointer ${ isFocus ? 'font-semibold before:block before:bg-blue-aud before:w-14 before:h-14 before:shadow-md before:rounded-full before:absolute before:-inset-x-4 before: ' : '' }
+				className={`relative w-full flex flex-wrap items-center justify-between space-x-10 text-xl cursor-pointer ${ isFocus ? 'font-semibold before:block before:bg-blue-aud before:w-14 before:h-14 before:shadow-md before:rounded-full before:absolute before:-inset-x-4 before: ' : '' }
 					${ hasChild ? '' : '' }
 				`}
 				onClick={() => setIsFocus(!isFocus)}
 			>
-				<Image
-					src={Icon}
-					width={22}
-					height={22}
-				/>
+				<span className="flex flex-wrap items-center space-x-10">
+					<Image
+						src={Icon}
+						width={22}
+						height={22}
+					/>
 
-				<span className={`hidden xl:inline font-medium self-start font-poppins text-sm ${ isFocus ? 'text-black' : 'text-gray-300' }`}>{text}</span>
-				
+					<span className={`hidden xl:inline font-medium self-start font-poppins text-sm ${ isFocus ? 'text-black' : 'text-gray-300' }`}>{text}</span>
+
+				</span>
+
 				{ hasChild && (
 					<svg className={`${ isFocus ? 'rotate-90' : ''}`} width="6" height="12"  viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M0 12L6 6L0 0" fill="#D3D6E4"/>
